@@ -28,27 +28,76 @@
     <a href="#">Contato</a>
   </nav>
 
-<!-- Precisa adionar em JavaScript pra poder funcionar --> 
-  
-  <h2>📢 Publique seu anúncio</h2>
-<form action="#" method="post" style="background: #e8f5e9; padding: 20px; border-radius: 8px;">
-  <label for="categoria">Categoria:</label><br>
-  <select id="categoria" name="categoria" required>
-    <option value="venda">Venda</option>
-    <option value="servico">Serviço</option>
-  </select><br><br>
 
-  <label for="titulo">Título do anúncio:</label><br>
-  <input type="text" id="titulo" name="titulo" required><br><br>
+  <h2 style="text-align:center; margin-top:40px; font-size:2em; color:#00796b; letter-spacing:1px;">📢 Publique seu anúncio</h2>
+  <form action="#" method="post" class="form-clean">
+    <label for="categoria">Categoria</label>
+    <select id="categoria" name="categoria" required>
+      <option value="venda">Venda</option>
+      <option value="servico">Serviço</option>
+    </select>
+    <label for="titulo">Título</label>
+    <input type="text" id="titulo" name="titulo" required placeholder="Ex: Bicicleta usada">
+    <label for="descricao">Descrição</label>
+    <textarea id="descricao" name="descricao" rows="3" required placeholder="Descreva seu anúncio..."></textarea>
+    <label for="contato">Contato</label>
+    <input type="text" id="contato" name="contato" required placeholder="Seu telefone ou e-mail">
+    <button type="submit" class="btn-clean">Enviar anúncio</button>
+  </form>
 
-  <label for="descricao">Descrição:</label><br>
-  <textarea id="descricao" name="descricao" rows="4" required></textarea><br><br>
-
-  <label for="contato">Contato:</label><br>
-  <input type="text" id="contato" name="contato" required><br><br>
-
-  <button type="submit">Enviar anúncio</button>
-</form>
+  <style>
+    .form-clean {
+      max-width: 600px;
+      margin: 10px auto 20px auto;
+      background: #fff;
+      padding: 10px 22px 22px 22px;
+      border-radius: 12px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      border: 1px solid #e0f2f1;
+    }
+    .form-clean label {
+      font-weight: 500;
+      color: #00796b;
+      margin-bottom: 2px;
+      font-size: 1em;
+    }
+    .form-clean input,
+    .form-clean select,
+    .form-clean textarea {
+      padding: 9px 10px;
+      border-radius: 6px;
+      border: 1px solid #b2dfdb;
+      font-size: 1em;
+      background: #f7fafc;
+      transition: border 0.2s;
+    }
+    .form-clean input:focus,
+    .form-clean select:focus,
+    .form-clean textarea:focus {
+      border: 1.5px solid #00796b;
+      outline: none;
+    }
+    .btn-clean {
+      background: #00796b;
+      color: #fff;
+      font-weight: 600;
+      padding: 11px 0;
+      border: none;
+      border-radius: 7px;
+      font-size: 1.08em;
+      cursor: pointer;
+      margin-top: 8px;
+      box-shadow: 0 1px 6px rgba(0,0,0,0.05);
+      transition: background 0.3s, transform 0.2s;
+    }
+    .btn-clean:hover {
+      background: #009688;
+      transform: scale(1.03);
+    }
+  </style>
 
 <!-- Daqui pra baixo começa os anuncios --> 
   <div class="container">

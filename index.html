@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Classificados do Bairro</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f4f4f4; }
+    header { background: #0015ff; color: rgb(0, 0, 0); padding: 15px; text-align: center; }
+    nav { background: #0099ff; padding: 10px; text-align: center; }
+    nav a { color: white; margin: 0 15px; text-decoration: none; }
+    .container { padding: 20px; }
+    .anuncio { background: rgb(214, 246, 252); padding: 15px; margin-bottom: 15px; border-radius: 5px; box-shadow: 0 0 5px #ccc; }
+    footer { background: #2c3e50; color: rgb(133, 206, 252); text-align: center; padding: 10px; margin-top: 20px; }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Classificados do Bairro</h1>
+    <p>Compre, venda e anuncie serviços com seus vizinhos</p>
+  </header>
+
+  <nav>
+    <a href="#">Início</a>
+    <a href="#">Vendas</a>
+    <a href="#">Serviços</a>
+    <a href="#">Contato</a>
+  </nav>
+
+<!-- Precisa adionar em JavaScript pra poder funcionar --> 
+  
+  <h2>📢 Publique seu anúncio</h2>
+<form action="#" method="post" style="background: #e8f5e9; padding: 20px; border-radius: 8px;">
+  <label for="categoria">Categoria:</label><br>
+  <select id="categoria" name="categoria" required>
+    <option value="venda">Venda</option>
+    <option value="servico">Serviço</option>
+  </select><br><br>
+
+  <label for="titulo">Título do anúncio:</label><br>
+  <input type="text" id="titulo" name="titulo" required><br><br>
+
+  <label for="descricao">Descrição:</label><br>
+  <textarea id="descricao" name="descricao" rows="4" required></textarea><br><br>
+
+  <label for="contato">Contato:</label><br>
+  <input type="text" id="contato" name="contato" required><br><br>
+
+  <button type="submit">Enviar anúncio</button>
+</form>
+
+<!-- Daqui pra baixo começa os anuncios --> 
+  <div class="container">
+    <h2>📦 Venda aqui seus Itens!</h2>
+
+    <div class="anuncio">
+      <img src="imagens/bike.jpg" alt="Imagem do Anuncio"style="float:left; margin-right:25px; width:100px; height:auto;">
+      <h3>Bicicleta usada</h3>
+      <p>R$ 300 - Bicicleta em ótimo estado, pouco usada. Contato: João - <strong>(11) 99999-0000</strong></p>
+      <ul>
+        <li>Grupo Shimano completo</li>
+        <li>Freios Hidraulicos</li>
+        <li>Suspeções RockShok</li>
+      </ul>
+    </div>
+
+    <div class="anuncio">
+      <img src="imagens/Geladeira.jpeg" alt="Imagem do Anuncio" style="float: left; margin-right: 15px; width: 115px; height: auto;">
+      <h3>Geladeira Consul</h3>
+      <p>R$ 800 - Geladeira funcionando perfeitamente. Retirada no bairro. Contato: Maria - <strong>(11) 98888-1111</strong></p>
+      <ul>
+        <li>Voltagem: 220</li>
+        <li>Cor: Branca</li>
+      </ul>
+    </div>
+
+    <div class="anuncio">
+      <img src="imagens/note.jpeg" alt="Imagem do Anuncio" style="float: left; margin-right: 15px; width: 100px; height: auto;">
+      <h3>Notebook Acer I7</h3>
+      <p>R$2000 - Notebook Acer I7 14000, 16GB DDR5, SSD 2TB. Retirar Pessoalmente. Contato: Rafael - <strong>(12) 91234-5678</strong></p>
+      <ul>
+        <li>Processador I7-14300</li>
+        <li>Memoria RAM DDR5 - 16GB</li>
+        <li>Armazenamento - SSD 2TB</li>
+        <li>Acompanha carregador Original</li>
+      </ul>
+    </div>
+
+    <h2>🛠️ Ofereça aqui seus Serviços</h2>
+
+    <div class="anuncio">
+      <img src="imagens/jardinagem.jpeg" alt="Imagem do Anuncio" style="float: left; margin-right: 15px; width: 100px; height: auto;">
+      <h3>Serviço de Jardinagem</h3>
+      <p>Atendimento semanal para manutenção de jardins. Contato: Carlos - <strong>(11) 97777-2222</strong></p>
+      <ul>
+        <li>Trabalhos de Roça</li>
+        <li>Podas de Arvores</li>
+        <li>poda de Gramados</li>
+        <li>Limpeza de Lotes</li>
+      </ul>
+    </div>
+
+    <div class="anuncio">
+      <img src="imagens/aulas.jpeg" alt="Imagem do Anuncio" style="float: left; margin-right: 15px; width: 100px; height: auto;">
+      <h3>Aulas de reforço escolar</h3>
+      <p>Professora com experiência. Contato: Ana - <strong>(11) 96666-3333</strong></p>
+        <ul>
+          <li>Matemática</li>
+          <li>Portugues</li>
+          <li>Física</li>
+          <li>Química</li>
+          <li>Inglês</li>
+        </ul>
+    </div>
+
+    <div class="anuncio">
+      <img src="imagens/marido de aluguel.jpeg" alt="Imagem do Anuncio" style="float: left; margin-right: 15px; width: 100px; height: auto;">
+      <h3>Marido de Aluguel</h3>
+      <p>Trabalhos Residenciais. Contato: Jonas - <strong>(12) 99999-1111</strong></p>
+        <ul>
+          <li>Eletrica</li>
+          <li>Hidráulica</li>
+          <li>Instalação de Equipamentos Eletricos e Eletrônicos</li>
+        </ul>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Classificados do Bairro - Todos os direitos reservados ao grupo ADM Univap - Modulo 3</p>
+  </footer>
+
+</body>
+</html>

@@ -2,7 +2,7 @@
 Projeto Modulo 3 - Curso de ADS UNIVAP
 
 
-Curso Analize e Desenvolvimento de Sistemas - UNIVAP
+Curso Análise e Desenvolvimento de Sistemas - UNIVAP
 Modulo 3
 
 integrantes do grupo:
